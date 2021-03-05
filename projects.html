@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="projects.css">
+
+    <title>Jan Anhalt | Projects</title>
+</head>
+<body class="background">
+
+    <header class="header grid-container">
+        <div class="title-wrap">
+           <h1 class="main-title">Projects From</h1> 
+           <a class="subtitle-link" href="./index.html"><h2 class="subtitle">Jan Anhalt</h2></a>
+        </div>
+
+        <nav class="navigation">
+            <ul class="link-container">
+                <li class="nav-link-wrap">
+                    <a href="./about.html"    class="nav-link">About</a>
+                </li>
+
+                <li class="nav-link-wrap">
+                    <a href="./projects.html" class="nav-link projects-link">Projects</a>
+                </li>
+
+                <li class="nav-link-wrap">
+                    <a href="./contact.html"  class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-container ">
+        
+        <h3 class="section-title">Development</h3>
+        
+        <!-- PROJECT 1 -->
+        <button class="accordion project-name">1. Personal Portfolio</button>
+        <a class="project-1 panel" href="">
+            <span class="panel-overlay"></span>
+            <p class="image-text">View Project</p>
+        </a>
+
+        <!-- PROJECT 2 -->
+        <button class="accordion project-name">2. Brown & Friends Clone</button>
+        <a class="project-2 panel" href="">
+            <span class="panel-overlay"></span>
+            <p class="image-text">View Project</p>
+        </a>
+
+         <!-- PROJECT 3 -->
+        <button class="accordion project-name">3. Wedding Invitation</button>
+        <a class="project-3 panel" href="">
+            <span class="panel-overlay"></span>
+            <p class="image-text">View Project</p>
+        </a>
+
+        <!-- PROJECT 4 -->
+        <button class="accordion project-name">4. Tribute Page</button>
+        <a class="project-4 panel" href="">
+            <span class="panel-overlay"></span>
+            <p class="image-text">View Project</p>
+        </a>
+
+        <!-- PROJECT 5 -->
+        <button class="accordion project-name">5. Survey Form</button>
+        <a class="project-5 panel" href="">
+            <span class="panel-overlay"></span>
+            <p class="image-text">View Project</p>
+        </a>
+
+        <!-- PROJECT 6 -->
+        <button class="accordion project-name">6. Technical Documentation Page</button>
+        <a class="project-6 panel" href="">
+            <span class="panel-overlay"></span>
+            <p class="image-text">View Project</p>
+        </a>
+
+        <!-- PROJECT 7 -->
+        <button class="accordion project-name">7. Band Website</button>
+        <a class="project-7 panel" href="">
+            <span class="panel-overlay"></span>
+            <p class="image-text">*currently developing*</p>
+        </a>
+    
+        <!-- DESIGN PROJECTS START -->
+        
+        <h3 class="section-title">Design</h3>
+        
+        <!-- DESIGN PROJECT 1 -->
+        <button class="accordion project-name">1. New Pony Music PR</button>
+        <a class="design-1 panel" href="">
+            <span class="panel-overlay"></span>
+            <p class="image-text">*currently designing*</p>
+        </a>
+
+        <!-- DESIGN PROJECT 2 -->
+        <button class="accordion project-name">2. Kosui Home</button>
+        <a class="design-2 panel" href="">
+            <span class="panel-overlay"></span>
+            <p class="image-text">*currently unavailable*</p>
+        </a>
+
+        <!-- DESIGN PROJECT 3 -->
+        <button class="accordion project-name">3.Fashion brand</button>
+        <a class="design-3 panel" href="">
+            <span class="panel-overlay"></span>
+            <p class="image-text">*currently unavailable*</p>
+        </a>
+
+    </main>
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        
+            for (i = 0; i < acc.length; i++) {
+              acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                  panel.style.display = "none";
+                } else {
+                  panel.style.display = "block";
+                }
+              });
+            }
+    </script>
+</body>
+
+</html>
